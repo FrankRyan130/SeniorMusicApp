@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_playTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+
+
+        android:text="Play Track" />
+
+    <Button
+        android:id="@+id/btn_addInstrument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+
+
+        android:text="Add Instrument" />
+
+    <HorizontalScrollView
+        android:id="@+id/firstInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_addInstrument"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_firstInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/secondInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/firstInstrumentConstraint">
+        <Button
+            android:id="@+id/btn_secondInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/thirdInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/secondInstrumentConstraint">
+        <Button
+            android:id="@+id/btn_thirdInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/fourthInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/thirdInstrumentConstraint">
+        <Button
+            android:id="@+id/btn_fourthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/fiveInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fourthInstrumentConstraint">
+        <Button
+            android:id="@+id/btn_fifthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/sixthInstrumentConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fiveInstrumentConstraint">
+        <Button
+            android:id="@+id/btn_sixthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Play Instrument" />
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>
