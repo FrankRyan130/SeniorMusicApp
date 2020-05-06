@@ -8,64 +8,81 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".CreateBaseSong">
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/hardwoodfloor"
+    tools:context=".CreateBaseTrack">
 
+    <Button
+        android:id="@+id/buttonBackToChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/add_instrument"
+        android:text="Back" />
 
     <Button
         android:id="@+id/buttonRecord"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_width="107dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/add_instrument"
         android:text="Record" />
+
     <Button
-        android:id="@+id/buttonAddToMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:text="Add to Track" />
+        android:id="@+id/btn_playAllAndRecord"
+        android:layout_width="139dp"
+        android:layout_height="87dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/add_instrument"
+        android:text="Play Main Track And Record" />
 
     <Button
         android:id="@+id/buttonCSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="30dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="33dp"
         android:layout_marginTop="113dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/buttonDSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="85dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="113dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/buttonFSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="113dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/buttonGSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="255dp"
         android:layout_marginTop="113dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/buttonASharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="310dp"
         android:layout_marginTop="113dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <android.support.constraint.ConstraintLayout
@@ -77,6 +94,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonG" />
 
@@ -84,8 +102,8 @@
             android:id="@+id/buttonB"
             android:layout_width="55dp"
             android:layout_height="235dp"
-            android:layout_marginStart="5dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonA" />
 
@@ -94,6 +112,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonE" />
 
@@ -102,6 +121,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonC" />
 
@@ -110,6 +130,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -118,6 +139,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonD" />
 
@@ -126,6 +148,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/buttonF" />
 
@@ -139,45 +162,50 @@
     <Button
         android:id="@+id/button_highCSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="30dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="33dp"
         android:layout_marginTop="365dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/button_highDSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="85dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="90dp"
         android:layout_marginTop="365dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/button_highFSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="365dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/button_highGSharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="255dp"
         android:layout_marginTop="365dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
     <Button
         android:id="@+id/button_highASharp"
         android:layout_width="42dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:layout_marginLeft="310dp"
         android:layout_marginTop="365dp"
         android:layout_marginBottom="-78dp"
+        android:background="@drawable/black_keys"
         android:text="" />
 
 
@@ -195,6 +223,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -204,6 +233,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highC" />
 
@@ -212,6 +242,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highD" />
 
@@ -220,6 +251,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highE" />
 
@@ -228,6 +260,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highF" />
 
@@ -236,6 +269,7 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highG" />
 
@@ -244,11 +278,41 @@
             android:layout_width="55dp"
             android:layout_height="235dp"
             android:text=""
+            android:background="@drawable/button_border"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/button_highA" />
 
 
 
     </android.support.constraint.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_deleteRecording"
+        android:layout_width="107dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/add_instrument"
+        android:text="Delete Recording" />
+
+    <Button
+        android:id="@+id/btn_playAll"
+        android:layout_width="107dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/add_instrument"
+        android:text="Play Main Track" />
+
+    <Button
+        android:id="@+id/buttonAddToMain"
+        android:layout_width="154dp"
+        android:layout_height="87dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="630dp"
+        android:background="@drawable/add_instrument"
+        android:text="Add to Main" />
+
 
 </RelativeLayout>

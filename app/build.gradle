@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "com.example.ziad.algorithmicmusicplayer"
+        applicationId "com.example.frank_ryan.harmonize_app"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1

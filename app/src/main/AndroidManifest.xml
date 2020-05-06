@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ziad.algorithmicmusicplayer" >
+    package="com.example.frank_ryan.harmonize_app" >
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -11,8 +11,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name="com.example.frank_ryan.harmonize_app.MainActivity"
+            android:label="Harmonize"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,18 +21,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreateBaseSong"
-            android:label="@string/app_name"
+            android:name="com.example.frank_ryan.harmonize_app.CreateBaseTrack"
+            android:label="Harmonize"
            >
 
         </activity>
         <activity
-            android:name=".MainTrackHome"
-            android:label="@string/app_name"
+            android:name="com.example.frank_ryan.harmonize_app.MainTrackHome"
+            android:label="Harmonize"
             >
 
         </activity>
 
+
+        <activity
+            android:name="com.example.frank_ryan.harmonize_app.ChooseInstrument"
+            android:label="Harmonize"
+            >
+
+        </activity>
 
     </application>
 
