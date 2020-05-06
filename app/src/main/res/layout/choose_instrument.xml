@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+ android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/piano_back">
+
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_instrument"
+        android:text="Back to Main Track" />
+
+    <Button
+        android:id="@+id/btn_Guitar"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:textColor="#FFFF"
+        android:background="@drawable/volume_button"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:text="Guitar" />
+
+    <Button
+        android:id="@+id/btn_Piano"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="300dp"
+        android:text="Piano"
+        android:textColor="#FFFF"
+        android:background="@drawable/play_button"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_electricPiano"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="200dp"
+        android:text="Electric Piano"
+        android:textColor="#FFFF"
+        android:background="@drawable/volume_button"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/btn_Proceed"
+        android:layout_width="238dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="600dp"
+        android:textSize="30sp"
+        android:background="@drawable/play_button"
+        android:text="Next" />
+
+    <RadioButton
+        android:id="@+id/radio_octave1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+
+        android:layout_marginTop="400dp"
+        android:text="Octaves: 1 to 2" />
+    <RadioButton
+        android:id="@+id/radio_octave2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="440dp"
+        android:text="Octaves: 3 to 4" />
+    <RadioButton
+        android:id="@+id/radio_octave3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="480dp"
+        android:text="Octaves: 5 to 6" />
+    <RadioButton
+        android:id="@+id/radio_octave4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="520dp"
+        android:text="Octaves: 7 to 8" />
+
+
+
+</RelativeLayout>

@@ -1,111 +1,1585 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/studio_back"
+    >
 
 
     <Button
         android:id="@+id/btn_playTrack"
-        android:layout_width="wrap_content"
+        android:layout_width="114dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="165dp"
         android:layout_marginTop="20dp"
-
-
+        android:background="@drawable/add_instrument"
+        android:fontFamily="serif"
         android:text="Play Track" />
 
     <Button
-        android:id="@+id/btn_addInstrument"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_saveTrack"
+        android:layout_width="114dp"
         android:layout_height="wrap_content"
 
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginLeft="289dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_instrument"
+        android:fontFamily="serif"
+        android:text="Save Track" />
 
 
-        android:text="Add Instrument" />
+    <Button
+        android:id="@+id/btn_addInstrument"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/add_instrument"
+        android:fontFamily="serif"
+        android:text="Add Instrument"
+        android:textSize="13sp" />
 
-    <HorizontalScrollView
+
+    <LinearLayout
         android:id="@+id/firstInstrumentConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/btn_addInstrument"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="4dp"
 
+       >
+
+
+        <TextView
+            android:id="@+id/textViewInstrument1"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textFontWeight="700"
+            android:fontFamily="cursive"
+            android:textColor="#E8E8E8" />
+
+        <Button
+            android:id="@+id/btn_color_firstInstrument"
+            android:layout_width="19dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pressed_key_green"
+            android:text=""
+
+            android:textSize="10sp" />
         <Button
             android:id="@+id/btn_firstInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:text="Play"
 
-    <HorizontalScrollView
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_volume_firstInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/volume_button"
+            android:textColor="#F2F2F2"
+            android:text="Volume: 3" />
+
+        <Button
+            android:id="@+id/btn_delete_firstInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_button"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/firstLowC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="104dp"
+            android:background="@drawable/button_border"
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="126dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstLowE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="148dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstLowF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="170dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstLowG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="192dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/firstLowA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="214dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstLowB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="236dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="258dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/firstHighD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="280dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="302dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="324dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstHighG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="346dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="368dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/firstInstrumentConstraint"            android:layout_marginLeft="390dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="184dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="206dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstLowASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="228dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/firstHighCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/firstHighDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="294dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="338dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/firstHighGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/firstHighASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="382dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/firstIconInstrument"
+            android:layout_width="98dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/firstInstrumentConstraint"
+            android:layout_marginLeft="5dp"
+
+            android:text="" />
+    <LinearLayout
         android:id="@+id/secondInstrumentConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/firstInstrumentConstraint">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstInstrumentConstraint"
+        android:layout_marginTop="82dp">
+
+        <TextView
+            android:id="@+id/textViewInstrument2"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textColor="#E8E8E8"
+            android:textFontWeight="700"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_color_secondInstrument"
+            android:layout_width="19dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pressed_key_green"
+            android:text=""
+
+            android:textSize="10sp" />
+
         <Button
             android:id="@+id/btn_secondInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:textSize="12sp"
+            android:text="Play"
+            />
 
-    </HorizontalScrollView>
+        <Button
+            android:id="@+id/btn_volume_secondInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/volume_button"
+            android:textColor="#F2F2F2"
+            android:text="Volume: 3" />
 
-    <HorizontalScrollView
+        <Button
+            android:id="@+id/btn_delete_secondInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_button"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/secondLowC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:background="@drawable/button_border"
+            android:layout_marginLeft="104dp"
+
+            android:text="" />
+
+
+
+        <Button
+            android:id="@+id/secondLowD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="126dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondLowE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="148dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondLowF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="170dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondLowG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="192dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/secondLowA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="214dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondLowB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="236dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="258dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/secondHighD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="280dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="302dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="324dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondHighG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="346dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="368dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+
+            android:layout_below="@id/secondInstrumentConstraint"              android:layout_marginLeft="390dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondLowCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondLowDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondLowFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="184dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondLowGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="206dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondLowASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="228dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/secondHighCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+        <Button
+            android:id="@+id/secondHighDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="294dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="338dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+        <Button
+            android:id="@+id/secondHighGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/secondHighASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="382dp"
+            android:background="@drawable/black_keys"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+        <TextView
+            android:id="@+id/secondIconInstrument"
+            android:layout_width="98dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/secondInstrumentConstraint"
+            android:text="" />
+
+
+
+    <LinearLayout
         android:id="@+id/thirdInstrumentConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/secondInstrumentConstraint">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondInstrumentConstraint"
+        android:layout_marginTop="82dp">
+
+
+        <TextView
+            android:id="@+id/textViewInstrument3"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textFontWeight="700"
+            android:fontFamily="cursive"
+            android:textColor="#E8E8E8"
+            />
+
+        <Button
+            android:id="@+id/btn_color_thirdInstrument"
+            android:layout_width="19dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pressed_key_green"
+            android:text=""
+
+            android:textSize="10sp" />
+
         <Button
             android:id="@+id/btn_thirdInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:textSize="12sp"
+            android:text="Play" />
 
-    <HorizontalScrollView
+        <Button
+            android:id="@+id/btn_volume_thirdInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/volume_button"
+            android:textColor="#F2F2F2"
+            android:text="Volume: 3" />
+
+        <Button
+            android:id="@+id/btn_delete_thirdInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_button"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/thirdLowC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="104dp"
+            android:text="" />
+
+
+
+        <Button
+            android:id="@+id/thirdLowD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="126dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdLowE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="148dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdLowF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdLowG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="192dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/thirdLowA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="214dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdLowB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="236dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="258dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/thirdHighD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="302dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="324dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdHighG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="346dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="368dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+            android:layout_marginLeft="390dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdLowCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdLowDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdLowFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="184dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdLowGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="206dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdLowASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="228dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/thirdHighCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/thirdHighDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="294dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="338dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/thirdHighGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/thirdHighASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_marginLeft="382dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/thirdIconInstrument"
+            android:layout_width="98dp"
+            android:layout_below="@+id/thirdInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+    <LinearLayout
         android:id="@+id/fourthInstrumentConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/thirdInstrumentConstraint">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdInstrumentConstraint"
+        android:layout_marginTop="82dp">
+
+        <TextView
+            android:id="@+id/textViewInstrument4"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textFontWeight="700"
+            android:fontFamily="cursive"
+            android:textColor="#E8E8E8"
+            />
+
+        <Button
+            android:id="@+id/btn_color_fourthInstrument"
+            android:layout_width="19dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pressed_key_green"
+            android:text=""
+
+            android:textSize="10sp" />
+
         <Button
             android:id="@+id/btn_fourthInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:textSize="12sp"
+            android:text="Play" />
 
-    <HorizontalScrollView
+
+        <Button
+            android:id="@+id/btn_volume_fourthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/volume_button"
+            android:textColor="#F2F2F2"
+            android:text="Volume: 3" />
+
+        <Button
+            android:id="@+id/btn_delete_fourthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_button"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/fourthLowC"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="104dp"
+            android:text="" />
+
+
+
+        <Button
+            android:id="@+id/fourthLowD"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="126dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthLowE"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="148dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthLowF"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthLowG"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="192dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fourthLowA"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="214dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthLowB"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="236dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighC"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="258dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fourthHighD"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighE"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="302dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighF"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="324dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthHighG"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="346dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighA"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="368dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighB"
+            android:layout_width="21dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="390dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthLowCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthLowDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthLowFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="184dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthLowGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="206dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthLowASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="228dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fourthHighCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fourthHighDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="294dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="338dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fourthHighGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fourthHighASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_marginLeft="382dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/fourthIconInstrument"
+            android:layout_width="98dp"
+            android:layout_below="@+id/fourthInstrumentConstraint"
+
+            android:layout_height="72dp"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+
+    <LinearLayout
         android:id="@+id/fiveInstrumentConstraint"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/fourthInstrumentConstraint">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourthInstrumentConstraint"
+        android:layout_marginTop="82dp">
+
+        <TextView
+            android:id="@+id/textViewInstrument5"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="30sp"
+            android:textFontWeight="700"
+            android:fontFamily="cursive"
+            android:layout_weight="1"
+            android:textColor="#E8E8E8"
+             />
+
+        <Button
+            android:id="@+id/btn_color_fifthInstrument"
+            android:layout_width="19dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/pressed_key_green"
+            android:text=""
+
+            android:textSize="10sp" />
+
         <Button
             android:id="@+id/btn_fifthInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_button"
+            android:textSize="12sp"
+            android:text="Play" />
 
-    <HorizontalScrollView
-        android:id="@+id/sixthInstrumentConstraint"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/fiveInstrumentConstraint">
         <Button
-            android:id="@+id/btn_sixthInstrument"
+            android:id="@+id/btn_volume_fifthInstrument"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Play Instrument" />
-    </HorizontalScrollView>
+            android:layout_height="wrap_content"
+            android:background="@drawable/volume_button"
+            android:textColor="#F2F2F2"
+            android:text="Volume: 3" />
+
+        <Button
+            android:id="@+id/btn_delete_fifthInstrument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stop_button"
+            android:text="Delete" />
+
+    </LinearLayout>
 
 
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/fifthLowC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="104dp"
+            android:text="" />
+
+
+
+        <Button
+            android:id="@+id/fifthLowD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="126dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthLowE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="148dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthLowF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthLowG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="192dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fifthLowA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="214dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthLowB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="236dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighC"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="258dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fifthHighD"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighE"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="302dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighF"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="324dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthHighG"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="346dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighA"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="368dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighB"
+            android:layout_width="21dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="390dp"
+            android:background="@drawable/button_border"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthLowCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+
+            android:layout_below="@+id/fiveInstrumentConstraint"
+
+            android:layout_marginLeft="118dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthLowDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthLowFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="184dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthLowGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="206dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthLowASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="228dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fifthHighCSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <Button
+            android:id="@+id/fifthHighDSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="294dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighFSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="338dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+        <Button
+            android:id="@+id/fifthHighGSharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="360dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+
+        <Button
+            android:id="@+id/fifthHighASharp"
+            android:layout_width="15dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_marginLeft="382dp"
+            android:background="@drawable/black_keys"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/fifthIconInstrument"
+            android:layout_width="98dp"
+            android:layout_below="@+id/fiveInstrumentConstraint"
+            android:layout_height="72dp"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+    </RelativeLayout>
+
